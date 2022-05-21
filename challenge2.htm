@@ -1,0 +1,29 @@
+<!DOCTYPEhtml>
+    <html>
+
+    <head>
+        <metacharset="utf-8">
+            <metaname="viewport"content="width=device-width">
+                <title>JSON</title>
+    </head>
+
+    <body>
+        <h2>JSON example</h2>
+
+        <p id="demo">
+            </p>
+            <script>
+            const schoolDetails=`{
+                "schoolName":"SBOA",
+                "Year":1988,
+                "City":1,
+                "NumberOfStudent":1000
+
+            }`;
+            const object=JSON.parse(schoolDetails);
+                document.getElementById('demo').innerHTML="School Name"+object.schoolName+"<br>Year="+object.Year+"<br>Rank in the city="
+                +object.City+"<br>No. of students studying="+object.NumberOfStudent;
+            </script>
+    </body>
+
+    </html>
